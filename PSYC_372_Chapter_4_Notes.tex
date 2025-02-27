@@ -1,0 +1,459 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mhchem}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Neuroscience Notes}
+\fancyhead[R]{\thepage}
+
+% Custom Commands
+\newcommand{\concept}[1]{\subsection*{\textcolor{blue}{Concept: #1}}}
+\newcommand{\definition}[1]{\subsubsection*{\textcolor{teal}{Definition: #1}}}
+\newcommand{\example}[1]{\paragraph{\textcolor{purple}{Example:}} #1}
+\newcommand{\summary}{\section*{\textcolor{red}{Summary}}}
+\newenvironment{keypoints}{\paragraph{\textbf{Key Points:}}\begin{itemize}[label=--]}{\end{itemize}}
+
+% Title
+\title{\textbf{Neuroscience Notes}}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section*{The Resting Membrane Potential}
+	Write an overview of the topic here.
+	
+	\section{Basics of Neuronal Communication}
+	\begin{enumerate}
+		\item Individual neurons are activated by \textbf{electrical signals}. 
+		\item Neurons communicate with other neurons via 
+		\textbf{chemical signals}.
+	\end{enumerate}
+	
+	There are both electrical and chemical properties of cell membranes that must be understood for the conceptualization of neuronal transmission. 
+	
+	\section{The Cell Membrane}
+	\begin{itemize}
+		\item The wall of the cell that separates the intracellular space (inside of the cell) from the extracellular space (outside of the cell, i.e., extracellular fluid).
+		\item Phospholipid bilayer with embedded proteins/sugars. 
+	\end{itemize}
+	
+	\section{Selective Permeability}
+	
+	\begin{itemize}
+		\item Most chemicals cannot pass through the cell membrane freely.
+		\subitem Flow and allowance of molecules controlled by specific protein channels embedded within the membrane. 
+		\subitem The opening and closing of these channels is dependent on electrical dynamics of the cell itself vs. the extracellular fluid. 
+	\end{itemize}
+	
+	\section{Membrane Potential}
+	
+	Think of neurons like batteries...
+	\begin{itemize}
+		\item There is a difference in \textbf{voltage, or electrical charge,} between the intracellular and extracellular space. 
+		\item This difference is called the membrane potential. 
+	\end{itemize}
+	\subsection{How was the membrane potential discovered?}
+
+	Scientists used the axon of a giant squid to examine the membrane potential:
+	\begin{itemize}
+		\item Used \textbf{microelectrodes}: extremely fine electrodes used for cellular recordings. 
+		\item How this was done:
+		\begin{enumerate}
+			\item Isolated an axon and placed it in salt water. 
+			\item Placed one electrode in the axon, and one in the salt water. 
+			\item Measured the \textbf{difference in charge} between the inside and outside of the axon. 
+		\end{enumerate}
+	\end{itemize}
+	
+	\section{The resting potential}
+	
+	The \textbf{resting potential}: the membrane potential of a neuron at rest (i.e., not sending a signal)
+	\begin{itemize}
+		\item The resting membrane potential of a neuron is typically at \textbf{-70 millivolts (-70mV)}
+	\end{itemize}
+	
+	\subsection{Neuron polarization}
+	\begin{itemize}
+		\item When a neuron is at rest, the inside of the neuron is negatively charged in relation to the extracellular fluid. 
+		\item In this case, we say that the membrane is \textbf{polarized}.
+	\end{itemize}
+	
+	\section{Why is there a "resting potential"?}
+	
+	\begin{itemize}
+		\item There is variation in the distribution of different \textbf{ions} inside and outside of the membrane. 
+	\end{itemize}
+	
+	\subsection{What are ions?}
+	\begin{itemize}
+		\item Ions are \textbf{charged particles} that make up the salts in neural tissue and extracellular fluid. 
+		\item There are two basic types. 
+		\begin{enumerate}
+			\item Cations: all positively charged ions. 
+			\item Anions: all negatively charged ions. 
+		\end{enumerate}
+		\item Important ions for basic neuronal transmission are:
+		\subitem Sodium (\ce{Na+})
+		\subitem Potassium (\ce{K+})
+		\subitem Chloride (\ce{Cl-})
+		\subitem Calcium (\ce{Ca^2+})
+		\subitem Organic anions (-)
+	\end{itemize}
+	\subsection{Ion Distribution}
+	
+	There is variation in the distribution of different ions inside and outside of the cell when the neuron is at rest...
+	\begin{itemize}
+		\item There is more \ce{Na+}, \ce{Cl-}, and \ce{Ca^2+} ions outside of the cell in the extracellular fluid. 
+		\item There are more \ce{K+} ions inside of the cell. 
+		\item There are also organic anions (-) "stuck" inside of  the cell (too large to move out).
+	\end{itemize}
+	
+	\subsection{Ion Channels}
+	
+	Ions can only move in and out of the cell via \textbf{ion channels} embedded in the cell membrane.
+	\begin{itemize}
+		\item Each ion channel is selective to only one ion channel (i.e., sodium only moves through sodium ion channels)
+		\item These channels are \textbf{voltage-gated}
+		\subitem Opening and closing is dependent on the value of the membrane potential. 
+		\item Most of these \textbf{ion channels} are \textbf{closed at rest}.
+	\end{itemize}
+	
+	\subsection{Sodium-Potassium Pumps}
+	
+	Sodium-potassium pumps also contribute to the uneven distribution of ions at rest...
+	
+	\begin{itemize}
+		\item These are protein complexes that are also embedded within the cell membrane, but are different from typical ion channels. 
+		\item Utilize \textbf{active transport mechanisms} that rely on \textbf{ATP} (adenosine triphosphate, provides energy to support cellular processes) for energy. 
+		\item Transports \textbf{three \ce{Na+} ions out} of the cell for every \textbf{two \ce{K+} ions} it draws \textbf{in} > brings neuron back to resting state following activation. 
+	\end{itemize} 
+	
+	\section*{The Action Potential}
+	Write an overview of the topic here.
+	
+	\section{Action Potentials}
+	
+	Action potentials are electrical impulses that are triggered when neurons are stimulated: 
+	\begin{itemize}
+		\item Action potentials, or APs, occur due to ions moving through voltage-gated channels in the cell membrane.
+	\end{itemize}
+	
+	\subsection{Steps of an Action Potential}
+	
+	\begin{enumerate}
+		\item Resting state 
+		\item Depolarizing phase
+		\item Repolarizing phase
+		\item Hyperpolarizing phase
+	\end{enumerate}
+	
+	\subsubsection{Resting Phase}
+	
+	The state of a neuron at rest, or not signaling. 
+	
+	\subsubsection{Depolarizing Phase}
+	
+	\begin{itemize}
+		\item A threshold of excitation is reached at the cell membrane. 
+		\item Voltage-gated \ce{Na+} ion channels open, \ce{Na+} ions rush into the cell (remember, at rest, \ce{Na+} is highly concentrated on the outside of the cell).
+		\subitem The "Peak" of the AP
+		\subsubitem The action potential quickly reaches its peak; \ce{Na+} ion channels become inactivated and close, this means no more \ce{Na+} is able to enter the cell from the outside. 
+	\end{itemize}
+	
+	\subsubsection{Repolarizing Phase}
+	\begin{itemize}
+		\item \ce{K+} ion channels open; \ce{K+} ions flow out of the neuron (remember, at rest, \ce{K+} is highly concentrated on the inside of  the cell).
+		\subitem Cell membrane begins to repolarize (return to the resting potential value). 
+	\end{itemize}
+	
+	\subsubsection{Hyperpolarizing Phase}
+	
+	\begin{itemize}
+		\item \textbf{Hyperpolarization}: Increase in negative charge relative to the resting potential. 
+		\item \ce{K+} channels stay open, \ce{K+} ions continue to leave the cell.
+		\subitem Causes cell membrane to "understood" the normal resting potential value. 
+	\end{itemize}
+	
+	\subsubsection{Return to Resting State}
+	
+	\begin{itemize}
+		\item \ce{K+} ion channels close
+		\subitem Causes the membrane potential to return to the resting value. 
+		\subitem Sodium-potassium pumps help to restore the resting potential. 
+	\end{itemize}
+	
+	\subsection{Refractory Periods}
+	
+	\textbf{Absolute refractory period}
+	
+	\begin{itemize}
+		\item 1-2 ms after an AP has been fired, during an absolute refractory period, it is impossible for the cell to fire another AP. 
+	\end{itemize}
+	
+	\textbf{Relative refractory period}
+	
+	\begin{itemize}
+		\item For a few more ms, an AP can only be fired with a higher-than-normal level of stimulation. 
+	\end{itemize}
+	
+	\subsection{The All-or-None Law}
+	
+	\begin{itemize}
+		\item Once an action potential is triggered, the impulse travels the length of the axon without decreasing the strength. 
+		\item This will be the maximal response for the maintenance of the same amplitude. 
+	\end{itemize}
+	
+	\subsubsection{How is the all-or-none law possible?}
+	
+	\begin{itemize}
+		\item \ce{Na+} ion channels are heavily concentrated at the \textbf{Nodes of Ranvier}.
+		\item Action potentials "jumps" from node to node. 
+		\subitem I.e., \textbf{Saltatory conduction}
+		\item The \textbf{myelin sheath} thus speeds up the conduction of action potentials.
+		\item \textbf{Multiple sclerosis}: autoimmune disease that results in destruction of the myelin sheaths of neurons. 
+		\subitem Results in slower transmission of action potentials. 
+	\end{itemize}
+	
+	\section{Postsynaptic Potentials}
+	
+	\subsection{Pre vs. Postsynatpic Neurons}
+	
+	\begin{itemize}
+		\item When a neuron fires an AP, a chemical signal is released from its terminal buttons. 
+		\item The signal then diffuses across the synapse. 
+		\subitem Synapse: the gap and point of communication between two neurons. 
+		\item The presynaptic neuron releases the signal, the postsynaptic neuron receives it. 
+	\end{itemize}
+	
+	\subsection{Postsynaptic potentials}
+	
+	\begin{itemize}
+		\item The chemical signal binds to receptors in the postsynaptic neuron's cell membrane. 
+		\item The signal can have one of two effects on the postsynaptic membrane. 
+		\subitem Depolarization (increases the membrane potential)
+		\subitem Hyperpolarization (decreases the membrane potential)
+	\end{itemize}
+	
+	\subsection{EPSPs and IPSPs}
+	
+	\begin{itemize}
+		\item Depolarizations are called excitatory postsynaptic potentials (EPSPs).
+		\subitem These increase the likelihood that the postsynaptic neuron will fire an action potential. 
+		\item Hyperpolarizations are inhibitory postsynaptic potentials (IPSPs).
+		\subitem These decrease the likelihood that the postsynaptic neuron will fire an action potential. 
+	\end{itemize}
+	
+	\subsection{Summation of postsynaptic potentials}
+	
+	\begin{itemize}
+		\item Both EPSPs and IPSPs are graded responses
+		\subitem Weak signals elicit weak PSPs. 
+		\subitem Strong signals elicit strong PSPs. 
+		\item Multiple PSPs are integrated and summed together to produce an overall effect to a postsynaptic neuron. 
+	\end{itemize}
+	
+	\subsection{Integration of PSPs}
+	
+	\begin{itemize}
+		\item Spatial summation: PSPs produced simultaneously on different parts of the postsynaptic neuron. 
+		\item Temporal summation PSPs produced in rapid sequence at the same part of the postsynaptic neuron. 
+	\end{itemize}
+	
+	\section{The Synapse and Neurotransmitters}
+	
+	\subsection{The Synapse}
+	\definition{The Synapse} The gap between neurons where chemical communication happens. 
+	\subsection{Types of synapses}
+	\begin{itemize}
+		\item Axodendritic
+		\subitem Terminal buttons of the presynaptic neuron synapse onto dendrites of the postsynaptic neuron. 
+		\item Axosomatic
+		\subitem Terminal buttons of the presynaptic neuron synapse onto the soma of the postsynaptic neuron. 
+		\item Axoaxonic
+		\subitem Terminal buttons of the presynaptic neuron synapse onto the axon of the postsynaptic neuron. 
+	\end{itemize}
+	
+	\subsection{Anatomy of a Synapse}
+	\begin{itemize}
+		\item Presynaptic membrane: cell membrane at the ends of the terminal buttons of the presynaptic cell. 
+		\subitem Site from which chemical signals called neurotransmitter are released into the synapse. 
+		\item Neurotransmitters are stored in synaptic vesicles until release. 
+		\item Postsynaptic membrane: cell membrane of the cell receiving the signal, or the postsynaptic neuron. 
+		\subitem Contain receptors, which are binding sites for chemicals released from the presynaptic cell. 
+	\end{itemize}
+	
+	\section{Neurotransmitters}
+	
+	Neurotransmitters are the chemical signals released across the synapse
+	
+	There are several classes:
+	\begin{enumerate}
+		\item Amino acids
+		\item Monoamines
+		\item Acetylcholine 
+		\item Neuropeptides
+		\item "Unconventional" neurotransmitters
+	\end{enumerate}
+	
+	\subsection{Amino Acid Neurotransmitters}
+	
+	\begin{itemize}
+		\item Amino acids: The building blocks of proteins.
+		\item We have excitatory and inhibitory neurotransmitters...
+		\subitem Excitatory: \textbf{glutamate}, aspartate.
+		\subitem Inhibitory: GABA, glycine. 
+	\end{itemize}
+	
+	\subsection{Monoamine Neurotransmitters}
+	
+	\begin{itemize}
+		\item These are called "monoamines" because they are synthesized from a single amino acid. 
+		\subitem Aromatic amino acids such as phenylalanine, tryptophan (indolamines), and tyrosine (catecholamines)
+		\item Within this group, we have catecholamines and indolamines.
+		\subitem Catecholamines: dopamine, norepinephrine, epinephrine. 
+		\subitem Indolamines: Serotonin. 
+	\end{itemize}
+	
+	\subsection{Acetylcholine}
+	
+	\begin{itemize}
+		\item Choline molecule with an added acetyl group.
+		\item Widespread in the CNS and at neuromuscular junctions. 
+	\end{itemize}
+	
+	\subsection{Neuropeptides}
+	
+	\begin{itemize}
+		\item Long chain of amino acids
+		\subitem Pituitary peptides: Oxytocin.
+		\subitem Hypothalamic peptides: Corticotropin-releasing hormone (CRH)
+		\subitem Brain-gut peptides: cholecystokinin.
+		\subitem Opioid peptides: substance P. 
+	\end{itemize}
+	
+	\section*{Synaptic Transmission}
+	Write an overview of the topic here.
+	
+	\section{Synaptic Transmission}
+	
+	\begin{itemize}
+		\item APs arrive at the terminal buttons of a neuron and trigger the release of neurotransmitter molecules into the synapse. 
+		\item 4 major events: 
+		\begin{enumerate}
+			\item Neurotransmitter synthesis and storage
+			\item Neurotransmitter release.
+			\item Activation of postsynaptic receptors.
+			\item Neurotransmitter inactivation and reuptake. 
+		\end{enumerate}
+	\end{itemize}
+	
+	\subsection{Neurotransmitter synthesis and storage}
+	
+	\begin{itemize}
+		\item Neurotransmitters are synthesized in the cytoplasm of the cell body or terminal buttons. 
+		\item These synthesized NTs are then packaged into vesicles. 
+		\item Vesicles are stored in clusters next to the presynaptic membrane. 
+		\item A neuron can synthesize and release more than one kind of neurotransmitter (i.e., \textbf{co-existence})
+		\example{GABA and a neuropeptide}
+	\end{itemize}
+	
+	\subsection{Neurotransmitter Release}
+	
+	\begin{itemize}
+		\item Exocytosis: the process of neurotransmitter molecule release from synaptic vesciles and into the synaptic cleft. 
+		\begin{enumerate}
+			\item An AP is transmitted down the axon of the presynaptic neuron and reaches the terminal buttons. 
+			\item Depolarization causes voltage-gated calcium ion channels to open on the presynaptic membrane. 
+			\item Calcium ions enter the presynaptic membrane. 
+			\item Synaptic vesicles fuse with the presynaptic membrane and empty their contents into the synaptic cleft. 
+		\end{enumerate}
+	\end{itemize}
+	
+	\subsection{Activation of Postsynaptic Receptors}
+	
+	\begin{itemize}
+		\item Released NTs attach to \textbf{receptors} on the postsynaptic membrane (usually on the dendrites).
+		\item \textbf{Ligand}: any molecule that binds to a receptor (NTs are ligands).
+		\item Each receptor contains binding sites for particular types on NTs. 
+		\subitem A NT can only influence cells that have receptors for that specific NT.  
+	\end{itemize}
+	
+	\subsubsection{Receptor Subtypes}
+	
+	\begin{itemize}
+		\item Most neurotransmitters can bind to more than one receptor subtype. 
+		\subitem \example{GABA\textsubscript{A} and GABA\textsubscript{B}, dopamine D\textsubscript{1-5}, GluN2\textsubscript{A-D}.
+		}
+		\item Receptor subtypes typically trigger different types of responses in the postsynaptic neuron...
+		\subitem Dopamine binds to D1 > excitatory effect. 
+		\subitem Dopamine binds to D2 > inhibitory effect. 
+	\end{itemize}
+	
+	\subsection{Neurotransmitter Inactivation and Uptake}
+	
+	\begin{itemize}
+		\item Neurotransmitter signals must be terminated after release and binding to postsynaptic receptors. 
+		\item Via two mechanisms...
+		\begin{enumerate}
+			\item Reuptake
+			\item Enzymatic degradation
+		\end{enumerate}
+	\end{itemize}
+	
+	\subsubsection{Neurotransmitter Reuptake}
+	
+	\begin{itemize}
+		\item \textbf{Transporters}: proteins in the cell membrane that bring neurotransmitter molecules back into the presynaptic neuron for repackaging and re-use. 
+		\subitem \example{Serotonin (5-HT) is taken back up by serotonin transporters (SERTs)}
+	\end{itemize}
+	
+	\subsubsection{Enzymatic Degradation of NTs}
+	\begin{itemize}
+		\item Enzymes break neurotransmitter molecules down into inactive chemicals that eventually wash away. 
+		\subitem \example{Acetylcholinesterase (AChE) breaks down acetylcholine (ACh)}
+	\end{itemize}
+	
+	\section{Effects of Drugs on Synaptic Transmission}
+	
+	\subsection{Effects of Drugs on Neurotransmission}
+	
+	\begin{itemize}
+		\item \textbf{Ligand:} any molecule that binds to a receptor (NTs are ligands).
+		\item Thus, drugs are also considered ligands. 
+	\end{itemize}
+	
+	\subsection{Agonists vs. Antagonists}
+	
+	\begin{itemize}
+		\item Agonist: a drug that mimics or facilitates the actions of a neurotransmitter. 
+		\subitem \example{nicotine is an agonist of acetylcholine}. 
+		\item Antagonist: a drug that inhibits the actions of a neurotransmitter. 
+		\subitem \example{Many antipsychotic drugs are antagonists of dopamine}.
+	\end{itemize}
+	
+	\section{Figures and Diagrams}
+	
+	
+	
+	\section{References}
+	Include all references used here in standard citation format.
+	
+\end{document}

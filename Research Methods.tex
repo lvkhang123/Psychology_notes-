@@ -1,0 +1,344 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{mhchem}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Neuroscience Notes}
+\fancyhead[R]{\thepage}
+
+% Custom Commands
+\newcommand{\concept}[1]{\subsection*{\textcolor{blue}{Concept: #1}}}
+\newcommand{\definition}[1]{\subsubsection*{\textcolor{teal}{Definition: #1}}}
+\newcommand{\example}[1]{\paragraph{\textcolor{purple}{Example:}} #1}
+\newcommand{\summary}{\section*{\textcolor{red}{Summary}}}
+\newenvironment{keypoints}{\paragraph{\textbf{Key Points:}}\begin{itemize}[label=--]}{\end{itemize}}
+
+% Title
+\title{\textbf{Neuroscience Notes}}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section*{Studying the Human Brain \& amp; Electrophysiology in Humans}
+	
+	\section{How do we image human brain?}
+	
+	\begin{enumerate}
+		\item Structural imaging 
+		\begin{itemize}
+			\item Computerized tomography (CT)
+			\item Magnetic resonance imaging (MRI)
+		\end{itemize}
+		\item Functional imaging 
+		\begin{itemize}
+			\item Positron emission tomography (PET)
+			\item Functional MRI (fMRI)
+		\end{itemize}
+	\end{enumerate}
+	
+	\subsection{CT Scanning}
+	
+	\begin{itemize}
+		\item Different types of tissue have different levels of x-ray absorption. 
+		\item CT creates images based off this. 
+		\item Developed in early 1970s. 
+		\item Non-invasive. 
+	\end{itemize}
+	
+	\subsection{Magnetic Resonance Imaging (MRI)}
+	
+	\begin{itemize}
+		\item Utilizes magnetic properties of \textbf{atomic nuclei}.
+		\item MRI switches brain from a low to high energy state. 
+		\item Calms back down in between scans, then evaluate differences in images. 
+		\item In biopsychology, we would specifically measure \textbf{hydrogen atoms} in both water and fat of the brain. 
+		\item Non-invasive. 
+	\end{itemize}
+	
+	\subsubsection{Advantages of MRI over CT}
+	
+	\begin{itemize}
+		\item No required exposure to radiation 
+		\item MRI images have better resolution. 
+	\end{itemize}
+	
+	\subsection{Positron Emission Tomography}
+	
+	\begin{itemize}
+		\item Utilizes a \textbf{radioactive 'tracer'}.
+		\item Example: tracer attaches to oxygen > locates water in the brain, OR tracer attaches to fluoride > locates glucose in the brain. 
+		\item Specifically in neuroscience, the radioactive \textbf{2-deoxyglucose (2-DG)} is used as a tracer
+		\subitem Mimics glucose (brain's energy source) in the brain. 
+		\subitem Accumulates in neurons and glial cells as opposed to metabolizing. 
+		\subitem Differing levels of 2-DG throughout the brain reflect amount of activity in different regions. 
+		\begin{itemize}
+			\item[+] If you start out your scan, whatever task it is that you want to look at, you see that this one area of the brain has a much higher concentration of two deoxyglucose than another area of the brain, especially in comparison to like a resting scan. Then it would be safe to assume in this case that, that place where there is more of an accumulation of glucose, it's requiring more energy.
+			\item[+] If it's requiring more energy, that part of the brain is probabily important for whatever task that person is undergoing.  
+		\end{itemize} 
+	\end{itemize}
+	
+	\subsection{fMRI}
+	
+	\begin{itemize}
+		\item Measures concentration of \textbf{deoxyhemoglobin} in the blood of the brain. 
+		\subitem Dealing with oxygen. 
+		\item As a region becomes more active, it requires higher levels of oxygenation. 
+		\item \textbf{BOLD response}: blood oxygen level dependent contrast. 
+		\item Disadvantage: Poor temporal resolution,  images take 2-3 seconds to develop following brain activity itself. 
+		\item Relationship between BOLD and neural activity still unclear. 
+		\item Non-invasive
+	 \end{itemize}
+	 
+	 \subsubsection{Advantages of fMRI over PET}
+	 
+	 \begin{itemize}
+	 	\item No radioactive injections
+	 	\item Both structural and functional 
+	 	\item Better spatial resolution 
+	 	\item Produces 3D images 
+	 \end{itemize}
+	
+	\subsection{Transcranial Magnetic Stimulation (TMS)}
+	
+	\begin{itemize}
+		\item Only method for non-invasively stimulating the brain. 
+		\item Used to alter activity within the cerebral cortex
+		\item Large coil that creates a magnetic field is places near the skull
+		\item Brief or prolonged stimulation from coil can either change or stop the activity of different brain regions
+		\item Behavior before and after stimulation is observed
+	 \end{itemize}
+	 
+	 \section{Psychophysiological Recording in Humans}
+	 
+	 Psychophysiological techniques:
+	 \begin{itemize}
+	 	\item Electroencephalography (EEG)
+	 	\item Electromyography (EMG)
+	 	\item Electrooculography (EOG)
+	 	\item Skin Conductance Response (SCR)
+	 	\item Cardiovascular Activity
+	 \end{itemize}
+	 
+	 \subsection{Electroencephalography (EEG)}
+	 
+	 \begin{itemize}
+	 	\item Measures \textbf{electrical activity} of the brain. 
+	 	\subitem Action potentials 
+	 	\subitem Postsynaptic potentials
+	 	\subitem Electrical signals from the skin, muscles, blood, and eyes
+	 	\subitem Can only record signals from the cortex
+	 	\subsubitem Similar to the TMS, of where you're saying specifically in the brain activity, not going to see responses and potentials deep into the brain. 
+	 	\subsubitem Not super worried about getting into any deep structures, only worry about looking at cortical activity. 
+	 	\subsubitem If we want to get into studying more of those subcortical structures, then we're going to use different methods like fMRI or PET. 
+	 	\item The procedure:
+	 	\subitem Attach electrodes to scalp directly or with an \textbf{electrode cap}
+	 	\subitem Record activity of neuron population under electrodes
+	 	\subsubitem Spontaneous activity OR \textbf{event-related potentials} following a stimulus
+	 \end{itemize}
+	 
+	 \subsubsection{EEG continued}
+	 
+	 \begin{itemize}
+	 	\item Waveforms on EEG outputs are called \textbf{electroencephalograms}.
+	 	\subitem Some correlate with different states of concsciousness or pathologies. 
+	 	\subsubitem For example, epileptic seizures have distinct EEG waveforms. 
+	 	\item Downfall is we can only go pretty shallowly into the cortex, cannot go much deeper than that. 
+	 \end{itemize}
+	 
+	 \subsubsection{EEG continued}
+	 
+	 \begin{itemize}
+	 	\item High temporal resolution, but poor spatial resolution. 
+	 	\item Newer methods of EEG allow representation of signals by 3D MRI images, improving localization. 
+	 \end{itemize}
+	 
+	 \subsection{Electromyography (EMG)}
+	 
+	 \begin{itemize}
+	 	\item Records muscle tension
+	 	\subitem Contractions of the muscle fibers that comprise skeletal muscle.
+	 	\subsubitem We have different kinds of fibers inside our muscles that are associated with different receptors and perceivable of different signals through different nerves or locations of the brain or from the environment vs our brain.  
+	 	\subsubitem Using EMG to have a good representation of whatever what we want to study.  
+	 	\item Procedure:
+	 	\subitem Two electrodes are taped over muscle of interest. 
+	 	\subitem \textbf{Raw signal:} number of muscle fibers contracting at any given time. 
+	 	\subitem \textbf{Integrated signal:} simpler measure of muscle tension. 
+	 \end{itemize}
+	 
+	 \subsection{Electrooculography (EOG)}
+	
+	\begin{itemize}
+		\item Records changes in electrical charge following eye movement. 
+		\item Electrodes are place above and below eyes (vertical movement) or to the left and right of the eyes (horizontal movements)
+		\subitem Use this for eye tracking things. 
+		\subitem Present different stimulus, want to evaluate exactly how somebody is visually processing that stimulus, then using EOG. 
+	\end{itemize}
+	
+	\subsection{Skin Conductance Response (SCR)}
+	
+	\begin{itemize}
+		\item Emotional experiences can be reflected by increases in \textbf{skin conductance} (ability of skin to conduct electricity).
+		\item \textbf{SCR}: measures changes in skin conductance in response to specific events or experiences. 
+		\subitem Likely due to \textbf{sweat gland activity}
+		\item Procedure: 
+		\subitem Sensors are placed on an area of the skin with a high number of sweat glands, like the fingers. 
+		\subitem This is partially how \textbf{polygraphs} are conducted. 
+	\end{itemize}
+	
+	\subsection{Cardiovascular Activity}
+	
+	\begin{itemize}
+		\item \textbf{Cardiovascular system:} blood vessels and heart
+		\subitem Activity can change depending on \textbf{emotions}.
+		\item Most used measures:
+		\subitem Blood pressure 
+		\subitem Blood volume 
+		\subitem \textbf{Heart rate}
+		\item Heart rate is measured using an \textbf{electrocardiogram (ECG)}
+		\item Measures electrical activity of the heart using electrodes placed on the chest. 
+		\item Compare heart rate before and after a specific stimulus.
+	\end{itemize}
+	
+	\section*{Invasive Techniques in Animals}
+	Write an overview of the topic here.
+	
+	\section{What kinds of invasive measurements are there?}
+	\begin{enumerate}
+		\item Electrical stimulation
+		\item Electrophysiological recording 
+		\item Lesions 
+		\subitem Requires \textbf{stereotaxic surgery}
+		\item Genetic techniques
+	\end{enumerate}
+	
+	\subsection{Stereotaxic Surgery}
+	
+	\begin{itemize}
+		\item Vital step that comes before most invasive recording or stimulating methods. 
+		\item Allows for the placement of experimental devices... 
+		\subitem Electrodes 
+		\subitem Small knife blades 
+		\subitem Cryoprobes 
+	\end{itemize}
+	
+	\subsubsection{How is stereotaxic surgery performed?}
+	
+	\begin{itemize}
+		\item An atlas of the brain (or \textbf{stereotaxic atlas}) is used to locate the structure of interest. 
+		\item Animal is then anesthetized and placed into the \textbf{stereotaxic instrument}. 
+		\item A hole is then drilled through the skull, and the chosen device is inserted. 
+	\end{itemize}
+	
+	\section{Electrical Stimulation}
+	
+	\begin{itemize}
+		\item Induction of increased neuronal firing via a current passed through an electrode. 
+		\item This allows us to gather information about the function of a particular brain area. 
+		\item Through electrical stimulation, we can alter behaviors such as...
+		\subitem Eating 
+		\subitem Drinking 
+		\subitem Aggression 
+		\subitem Copulation 
+		\subitem Sleeping 
+	\end{itemize}
+	
+	\subsection{Recording Methods}
+	
+	\begin{enumerate}
+		\item \textbf{Intracellular unit recordings:} insertion of microelectrode \textit{inside the cell membrane of a neuron}. 
+		\item \textbf{Extracellular unit recordings:} insertion of microelectrode into the extracellular fluid. 
+		\item \textbf{Multiple unit recordings:} electrode picks up signals from multiple neurons (units).
+		\item \textbf{Invasive EEG:} large electrodes pick up field of electrical activity within a chosen region. 
+	\end{enumerate}
+	
+	\section{Lesioning}
+	
+	\begin{itemize}
+		\item \textbf{Lesion:} to remove or damage an area of the brain. 
+		\item Observe behavior before and after lesion and compare to non-lesioned controls. 
+		\item Can be \textbf{unilateral} or \textbf{bilateral} (i.e., only the left hippocampus or both hippocampi, respectively).
+		\item Issues associated with lesioning...
+		\subitem Bordering tissue is likely damaged as well. 
+		\subitem The above can be a confounding variable, i.e, observed effects might be from the lesioned bordering tissue rather than the targeted tissue. 
+		\item There are four types of lesions...
+		\begin{enumerate}
+			\item \textbf{Aspiration}: a fine-tipped glass pipette is used to suction out a portion of the cortex. 
+			\item \textbf{Radio frequency}: a high frequency electrical current that produces heat that destroys neurons. 
+			\item \textbf{Knife cuts:} a blade or scalpel is used to sever a part of the brain. 
+			\item \textbf{Cryogenic blockade:} coolant pumped through a cryoprobe "freezes" or causes a neuron to stop firing. 
+			\subitem This is reversible; once the neurons warms back up, they can fire again. 
+		\end{enumerate}
+	\end{itemize}
+	
+	\section{Genetic Techniques}
+	
+	\begin{itemize}
+		\item \textbf{Genetic knockouts}: delete a gene of interest. 
+		\item \textbf{Genetic knockins}: overexpress a gene of interest. 
+		\item \textbf{Transgenic lines} (primarily mice): insertion of a gene from another species, or specific editing of the genome for the expression of certain traits. 
+	\end{itemize}
+	
+	\section*{Testing Animal Behavior}
+	
+	Write an overview of the topic here.
+	
+	\section{Behavioral Testing in Mice and Rats}
+	
+	One way we can study cognition is through behavioral tasks. In mice and rats, one of the most common ways to do this is through different types of mazes.
+	
+	\subsection{1. Morris Water Maze}
+	
+	\begin{itemize}
+		\item Tests spatial learning through visual cues (typically on the walls) and a platform the animal must swim to. 
+		\item Water controls for extraneous variables since rodents don't like having to swim. 
+	\end{itemize} 
+	
+	\subsection{2. Barnes Maze}
+	
+	\begin{itemize}
+		\item Similar to the MWM, the Barnes maze also tests spatial navigation and memory. 
+		\item Target hole (usually with a treat) and visual cues around the room. 
+	\end{itemize}
+	
+	\subsection{3. Y-Maze}
+	
+	\begin{itemize}
+		\item Tests short-term memory, as well as exploratory behavior in mice and rats. 
+	\end{itemize}
+	
+	\subsection{4. Elevated Plus Maze}
+	
+	\begin{itemize}
+		\item Offers a great way to study anxiety and defensiveness in rodents. 
+		\item Mice and rats don't like open spaces and bright lights, the closed arms are preferred. 
+		\item Administration of drugs, treatments, etc. might change this. 
+	\end{itemize}
+	
+	\subsection{5. Radial Arm Maze}
+	
+	\begin{itemize}
+		\item Another test for spatial learning and memory. 
+	\end{itemize}
+	
+	\section{References}
+	Include all references used here in standard citation format.
+	
+\end{document}
